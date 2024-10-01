@@ -1,40 +1,32 @@
-// Operadores Aritiméticos
-let x = 10;
-let y = 5;
-
-let soma = x + y;
-let subtracao = x - y;
-let multiplicacao = x * y;
-let divisao = x / y;
-let resto = x % y;  // Resto da divisão
-
-// Operadores de Atribuição
-let a = 10;
-a += 5; // Equivalente a: a = a + 5
-a = a + 5;
-
-// Operadores de Comparação
-let idade = 20;
-let maiorIdade = idade >= 18;
-let igual10 = idade == 10;
-
-// Estruturas Condicionais
-const peso = 150;
-if (peso >= 100) {
-    console.log("É Thais Carla");
+// Exercício 1
+const idade = 18;
+if (idade >= 18) {
+    console.log("Você é maior de idade");
 } else {
-    console.log("Não é Thais Carla");
+    console.log("Você é menor de idade");
 }
 
-// Estrutura de Repetição
-// Loop (for)
-for (let i = 0; i < 5; i ++) {
-    console.log("Intereção", i);
+// Exercício 2
+const numero = 7;
+if (numero % 2 == 0) {
+    console.log("O número é par");
+} else {
+    console.log("O número é impar");
 }
 
-// Lopp (while)
-let contador = 0;
-while (contador < 5) {
-    console.log("O contador é ", + contador);
-    contador++;
+// Exercício 3 
+const valor = 5;
+if (valor > 0) {
+    console.log("Número positivo");
+} else if (valor < 0) {
+    console.log("Número negativo");
+} else {
+    console.log("Zero");
+}
+
+
+// Exercicio 4
+let tabuada = 8;
+for (let i = 1; i <= 10; i++) {
+    console.log(tabuada + " x " + i + " = " + (tabuada * i));
 }
