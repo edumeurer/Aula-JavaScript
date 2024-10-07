@@ -1,32 +1,43 @@
-// Exercício 1
-const idade = 18;
-if (idade >= 18) {
-    console.log("Você é maior de idade");
-} else {
-    console.log("Você é menor de idade");
+// Função Simples (Declarativa)
+function saudacao() {
+    return console.log("Olá mundo");
 }
 
-// Exercício 2
-const numero = 7;
-if (numero % 2 == 0) {
-    console.log("O número é par");
-} else {
-    console.log("O número é impar");
+// Função com Parâmetros
+function soma(valorA, valorB) {
+    const totalSoma = valorA + valorB;
+    return console.log(totalSoma);
 }
 
-// Exercício 3 
-const valor = 5;
-if (valor > 0) {
-    console.log("Número positivo");
-} else if (valor < 0) {
-    console.log("Número negativo");
-} else {
-    console.log("Zero");
+// Funcão Anônima
+const multiplicar = function (valorA, valorB) {
+    const total = valorA * valorB;
+    return console.log(total);
 }
 
+// Arrow Function
+const dividir = (a, b) => a / b;
 
-// Exercicio 4
-let tabuada = 8;
-for (let i = 1; i <= 10; i++) {
-    console.log(tabuada + " x " + i + " = " + (tabuada * i));
+// Função com valor padrão de parãmetro
+function exponencial(base, expoente = 2) {
+    const exp = base ** expoente;
+    return console.log(exp);
 }
+
+// Invocando as Funções
+saudacao();
+soma(10, 5);
+multiplicar(5, 4);
+console.log(dividir(10, 2));
+exponencial(3);
+exponencial(3, 9);
+
+// Função de Callback
+function inicializarAplicacao() {
+    saudacao();
+    soma(10, 5);
+    multiplicar(5, 4);
+    exponencial(3);
+    exponencial(3, 9);
+}
+inicializarAplicacao();
