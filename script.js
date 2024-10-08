@@ -1,20 +1,26 @@
-// Trabalho Calculadora
-
-function calculadora(a, b, condicao) {
-    if (condicao == 'soma') {
-        return a + b;
-    } else if (condicao == 'subtracao') {
-        return a - b;
-    } else if (condicao == 'multiplicacao') {
-        return a * b;
-    } else if (condicao == 'divisao') {
-            return a / b;
-    } else {
-        return "Operação inválida";
-    }
+// Selecionar por ID
+function puxarElementoPorId() {
+    const subtitulo = document.getElementById("subtitulo");
+    return console.log(subtitulo);
 }
-console.log(calculadora(10, 2, 'soma'));
-console.log(calculadora(10, 2, 'subtracao'));
-console.log(calculadora(10, 2, 'multiplicacao'));
-console.log(calculadora(10, 2, 'divisao'));
-console.log(calculadora(10, 2, 'modulo'));
+puxarElementoPorId();
+
+// Selecionar por Classe
+function puxarElementoPorClasse() {
+    const titulo = document.getElementsByClassName("titulo");
+    return console.log(titulo);
+}
+puxarElementoPorClasse();
+
+// Selecionar por Tag
+function puxarElementoPorTag () {
+    const tags = document.getElementsByTagName("p");
+    return console.log(tags);
+}
+puxarElementoPorTag();
+
+// Função para modificar o texto
+function setText() {
+    const subtitulo = document.getElementById("meuTitulo");
+    subtitulo.textContent = "Novo Texto";
+}
