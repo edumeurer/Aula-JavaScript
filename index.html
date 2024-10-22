@@ -2,14 +2,29 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Aula 05 JavaScript</title>
-        <script src="script.js"></script>
+        <title>Aula 06 JavaScript</title>
     </head>
     <body>
-        <h1 class="titulo">Este é um H1</h1>
-        <h2 id="subtitulo">Este é um H2</h2>
-        <p>Este é um parágrafo</p>
-        <h1 id="meuTitulo">Texto a ser alterado</h1>
-        <button onclick="setText()">Mudar o texto</button>
+        <h2>Formulário de Contato</h2>
+
+        <form id="contact-form">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <br>
+
+            <textarea id="message" name="message" required>
+            </textarea>
+
+            <br>
+
+            <button type="submit">Enviar</button>
+            <script rel="stylesheet" src="script.js"></script>
+        </form>
     </body>
 </html>

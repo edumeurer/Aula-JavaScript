@@ -1,26 +1,17 @@
-// Selecionar por ID
-function puxarElementoPorId() {
-    const subtitulo = document.getElementById("subtitulo");
-    return console.log(subtitulo);
-}
-puxarElementoPorId();
+document.getElementById("contact-form").addEventListener(
+    "submit", function(event) {
+        event.preventDefault();
+        console.log(event);
 
-// Selecionar por Classe
-function puxarElementoPorClasse() {
-    const titulo = document.getElementsByClassName("titulo");
-    return console.log(titulo);
-}
-puxarElementoPorClasse();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
 
-// Selecionar por Tag
-function puxarElementoPorTag () {
-    const tags = document.getElementsByTagName("p");
-    return console.log(tags);
-}
-puxarElementoPorTag();
+        const mailtolink = 
+        `mailto:${email}?
+        subject=${encodeURIComponent("Assunto: Reunião")}
+        &body=${encodeURIComponent(message)}`;
 
-// Função para modificar o texto
-function setText() {
-    const subtitulo = document.getElementById("meuTitulo");
-    subtitulo.textContent = "Novo Texto";
-}
+        window.location.href = mailtolink;
+    }
+);
