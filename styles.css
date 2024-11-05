@@ -1,0 +1,58 @@
+body {
+    font-family: 'Luckiest Guy', sans-serif;
+    background: linear-gradient(145deg, #002244, #001122);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1 {
+    color: #00ff6a;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    overflow: hidden;
+}
+thead {
+    background-color: #00ff6a;
+    color: #0d0d0d;
+    font-weight: bold;
+}
+th, td {
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: left;
+    font-size: 1.2em;
+}
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 51, 102, 0.3);
+}
+tbody tr:nth-child(odd) {
+    background-color: rgba(0, 102, 204, 0.3);
+}
+img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+table, th, td {
+    transition: background-color 0.3s ease;
+}
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
